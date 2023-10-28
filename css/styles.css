@@ -61,11 +61,10 @@ button {
 }
 
 .container {
-  width: 1128px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0;
-  padding-right: 0;
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 /* header */
@@ -92,6 +91,8 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  display: flex;
+  padding: 24px 0;
 }
 
 .header-nav-list-item:hover,
@@ -110,6 +111,8 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  display: flex;
+  padding: 24px 0;
 }
 
 .header-contacts-item:hover,
@@ -124,7 +127,6 @@ button {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
-  display: flex;
 }
 
 .header-container {
@@ -143,13 +145,11 @@ button {
 .header-nav-list {
   display: flex;
   gap: 40px;
-  padding: 24px 0;
 }
 
 .header-contacts-list {
   display: flex;
   gap: 40px;
-  padding: 24px 0;
 }
 
 /* section 1 hero */
