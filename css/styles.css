@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  max-width: 1158px;
+  max-width: 1440px;
   padding-left: 0;
   padding-right: 0;
   margin-left: 0;
@@ -49,6 +49,24 @@ section {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+
+button {
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* header */
 
 .header-nav-logo-blue {
@@ -59,16 +77,12 @@ section {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
+  display: inline-block;
 }
 
 .header-nav-logo-black {
   color: #2e2f42;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
 }
 
 .header-nav-list-item {
@@ -86,6 +100,7 @@ section {
 
 .header-contacts {
   font-style: normal;
+  margin-left: auto;
 }
 
 .header-contacts-link {
@@ -106,10 +121,40 @@ section {
   color: #404bbf;
 }
 
+.header {
+  border-bottom: 1px solid #e7e9fc;
+  display: flex;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav-list {
+  display: flex;
+  gap: 40px;
+}
+
+.header-contacts-list {
+  display: flex;
+  gap: 40px;
+}
+
 /* section 1 hero */
 
 .hero {
   background-color: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
@@ -118,9 +163,18 @@ section {
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
+  max-width: 496px;
+  text-align: center;
+  margin: 0 auto 48px;
 }
 
 .button-hero {
+  display: block;
+  margin: 0 auto;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
   background-color: #4d5ae5;
   font-weight: 500;
   line-height: 1.5;
@@ -130,13 +184,18 @@ section {
 .button-hero:hover,
 .button-hero:focus {
   background-color: #404bbf;
-  cursor: pointer;
 }
 
 /* section 2 */
 
-h2 {
-  display: none;
+.company-list {
+  display: flex;
+  gap: 24px;
+}
+
+.company-item {
+  width: calc((100% - 72px) / 4);
+  width: 264px;
 }
 
 .company-title {
@@ -145,6 +204,7 @@ h2 {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .company-text {
   line-height: 1.5;
@@ -156,9 +216,33 @@ h2 {
 .team {
   background-color: #f4f4fd;
 }
+
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
 .team-list-item {
   background-color: #ffffff;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+  width: 264px;
 }
+
+.team-wrapper {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.company-title {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.company-text {
+  text-align: center;
+}
+
 .team-title {
   font-size: 36px;
   line-height: 1.11;
@@ -166,6 +250,7 @@ h2 {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 
 /* section 4 */
@@ -174,8 +259,19 @@ h2 {
   background-color: #f4f4fd;
 }
 
+.portfolio-wrapper {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  margin-bottom: 8px;
+}
+
 .portfolio-list {
   background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 .porfolio-title-item {
   font-weight: 500;
@@ -183,6 +279,7 @@ h2 {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  width: calc((100% - 48px) / 3);
 }
 
 .portfolio-list-text {
@@ -194,7 +291,9 @@ h2 {
 
 .footer {
   background-color: #2e2f42;
+  padding: 100px 0;
 }
+
 .footer-nav-logo-blue {
   color: #4d5ae5;
   font-family: 'Raleway', sans-serif;
@@ -203,16 +302,12 @@ h2 {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-nav-logo-black {
   color: #f4f4fd;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
 }
 
 .footer-text {
