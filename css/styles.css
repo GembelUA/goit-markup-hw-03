@@ -1,9 +1,7 @@
-.link {
-  text-decoration: none;
-}
-
-.list {
-  list-style-type: none;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 /* body */
@@ -15,6 +13,42 @@ body {
   font-size: 16px;
 }
 
+.container {
+  max-width: 1158px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+img {
+  display: block;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 /* header */
 
 .header-nav-logo-blue {
@@ -101,6 +135,10 @@ body {
 
 /* section 2 */
 
+h2 {
+  display: none;
+}
+
 .company-title {
   font-weight: 500;
   font-size: 20px;
@@ -112,6 +150,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
 /* section 3 */
 
 .team {
